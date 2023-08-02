@@ -1,6 +1,8 @@
-# Ansible Playbook for Deploying Node Exporter, Prometheus, and Grafana
+# Ansible Playbook for Deploying Node Exporter, and displaying metrics using Prometheus and Grafana - with Telegram alerts
 
 ## Introduction
+
+This project was done as a part of the luganodes 2023 hiring program. This is task no. 2, Submitted by **Rujul Srivastava, 20BIT0187**
 
 This repository contains an Ansible playbook to automate the deployment of Node Exporter on multiple hosts. Additionally, it sets up Prometheus and Grafana on your local machine to monitor the metrics collected by the Node Exporter. The playbook is designed to provide easy setup and configuration, enabling users to quickly start monitoring their systems.
 
