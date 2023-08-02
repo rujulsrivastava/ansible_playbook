@@ -11,9 +11,9 @@ get node_exporter : wget https://github.com/prometheus/node_exporter/releases/do
 2. Create project directory and structure
 mkdir luganodes
 write inventory.ini, playbook.yml
-inventory.ini
-[linux_hosts]
-192.168.207.130 ansible_user=raven ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_password=Winner@1
+
+3. In `inventory.ini` , change the IP addresses, username and password according to the target system in which the node_exporter is to be deployed.
+
 playbook.yml
 ---
 - name: Install Node Exporter On RujulLinux
