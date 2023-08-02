@@ -139,7 +139,7 @@ To achieve this, follow these steps:
 3. Trigger alerts by simulating threshold breaches in the Node Exporter metrics.
 
 ## Video Demonstration
-The video demonstration showcases the Grafana dashboard for Node Exporter metrics and the front-ends of both Prometheus (showing all targets) and Grafana (showing alerts if the bonus task is done). The video link [here]([https://drive.google.com/file/d/1aMpJQq1RIlrKU7NacMPxTmf1dnJNjCUp/view?usp=sharing](https://drive.google.com/file/d/1aZqbORRGsMaQgZpCnpYX0wPVzqtR2nbW/view?usp=drive_link))
+The video demonstration showcases the Grafana dashboard for Node Exporter metrics and the front-ends of both Prometheus (showing all targets) and Grafana (showing alerts if the bonus task is done). The video link [here](https://drive.google.com/file/d/1aZqbORRGsMaQgZpCnpYX0wPVzqtR2nbW/view?usp=drive_link)
 
 ## Conclusion
 With this Ansible playbook, deploying Node Exporter on multiple hosts and setting up Prometheus and Grafana becomes a straightforward process. The included configurations and demonstrations provide a solid foundation for monitoring systems effectively.
