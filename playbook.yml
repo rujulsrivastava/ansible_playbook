@@ -1,0 +1,24 @@
+---
+- name: Install Node Exporter On RujulLinux
+  hosts: linux_hosts
+  gather_facts: yes
+  tasks:
+    - name: Make New Directory
+      file:
+        path: "/home/raven/NodeExporterFromVM"
+        state: directory
+      tags:
+        - prometheus
+
+    - name: Copy NodeExporter File
+      copy:
+        src: "/home/raven/luganodes/node_exporter-1.6.1.linux-amd64.tar.gz"
+        dest: "/home/raven/NodeExporterFromVM"
+
+    - name: Unarchive NodeExporter File
+      unarchive:
+        src: "/home/raven/NodeExporterFromVM/node_exporter-1.6.1.linux-amd64.tar.gz"
+        dest: "/home/raven/NodeExporterFromVM/"
+        remote_src: yes
+        creates: "/home/raven/NodeExporterFromVM/node_exporter-1.6.1.linux-amd64/"
+
