@@ -10,7 +10,7 @@ receivers:
   - name: 'telegram'
     webhook_configs:
     - send_resolved: true
-      - url: 'https://api.telegram.org/bot6652539769:AAEwUS2vw9szBIF7MLbJSWj0lPAtG9KCXAY/sendMessage?chat_id1012503812=&text={{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+      - url: 'https://api.telegram.org/<BOT API TOKEN>/sendMessage?chat_id<CHAT ID>=&text={{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
 inhibit_rules:
   - source_match:
       severity: 'critical'
