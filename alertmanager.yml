@@ -1,0 +1,19 @@
+global:
+  resolve_timeout: 5m
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 5m
+  repeat_interval: 1h
+  receiver: 'telegram'
+receivers:
+  - name: 'telegram'
+    webhook_configs:
+    - send_resolved: true
+      - url: 'https://api.telegram.org/bot6652539769:AAEwUS2vw9szBIF7MLbJSWj0lPAtG9KCXAY/sendMessage?chat_id1012503812=&text={{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+inhibit_rules:
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'dev', 'instance']
