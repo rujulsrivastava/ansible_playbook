@@ -4,7 +4,7 @@ Feel free to ping me at rujulsrivastava@gmail.com to find out more about this pr
 
 ## Introduction
 
-This repository contains an Ansible playbook to automate the deployment of Node Exporter on multiple hosts. Additionally, it sets up Prometheus and Grafana on your local machine to monitor the metrics collected by the Node Exporter. The playbook is designed to provide easy setup and configuration, enabling users to quickly start monitoring their systems.
+This repository contains an Ansible playbook to automate the deployment of Node Exporter on multiple hosts. Additionally, it sets up Prometheus and Grafana on your local machine to monitor the metrics collected by the Node Exporter. The playbook is designed to provide easy setup and configuration, enabling users to quickly start monitoring their systems. It supports devops philosophy.
 
 ## Prerequisites
 
